@@ -1,0 +1,35 @@
+.aside {
+    padding: 30px;
+}
+
+.genres {
+    color: #fff;
+}
+
+.genres__items {
+    transition: color .3s linear;
+    margin-bottom: 10px;
+    &:hover{
+        color: aqua;
+    }
+}
+
+.news {
+    color: #fff;
+}
+
+.new__img {
+    margin-bottom: 10px;
+}
+
+.new__item{
+    margin-bottom: 10px;
+}
+
+.new__link{
+    transition: color .3s linear;
+    &:hover{
+        color: aqua;
+        cursor: pointer;
+    }
+}

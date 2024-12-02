@@ -1,0 +1,152 @@
+.movie__general__info {
+    display: flex;
+    padding: 40px 0px;
+    
+}
+
+.main__title.--movie {
+    text-align: left;
+}
+.movie__desc__item {
+    margin-bottom: 10px;
+}
+
+.movie__desc {
+    line-height: 1.5;
+}
+
+.movie__video{
+    video{
+        max-width:80%;
+        max-height:500px;
+        width: 100%;
+        height: 100%;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-comment {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comment__field{
+    margin: 0 auto;
+}
+#comment__field-2{
+    background-color: #fff;
+    color: #000;
+    margin-top: 20px;
+    padding: 10px;
+    &:focus{
+        border: none;
+    }
+}
+
+.make__comment{
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.make__comment-button{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    background-color: #fff;
+    color: #000;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all .3s linear;
+
+    &:hover{
+        background-color: #000;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+}
+
+.user-avatar {
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.user-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.comment-content {
+    flex: 1;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.user-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.comment-timestamp {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.comment-text {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.comments{
+    padding: 40px 10px;
+}
+
+@media(max-width: 975px){
+    .movie__general__info{
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 540px){
+    .user-comment{
+        display: block;
+    }
+}
+@media(max-width: 473px){
+    .comment-header{
+        display: block;
+        span{
+            display: block;
+        }
+    }
+}
+@media(max-width: 488px){
+    input,textarea{
+        max-width: 300px;
+        height: auto;
+    }
+    .comment__field{
+        max-width: 200px;
+    }
+}
